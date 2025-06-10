@@ -1,0 +1,11 @@
+Metadata-Version: 2.2
+Name: mlproject
+Version: 0.0.1
+Author: santhosh
+Author-email: santhoshkommula98@gmail.com
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: seaborn
+Dynamic: author
+Dynamic: author-email
+Dynamic: requires-dist
