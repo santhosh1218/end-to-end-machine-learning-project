@@ -1,0 +1,5 @@
+[2025-06-12 13:52:45,837] 21 root - INFO - data ingestion method or compoenent
+[2025-06-12 13:52:46,309] 24 root - INFO - Looking for file at: G:\datascience\end_to_end_machine_learning project\Notebook\Data\stud.csv
+[2025-06-12 13:52:46,311] 26 root - INFO - Creating folder: artifacts
+[2025-06-12 13:52:46,363] 28 root - INFO - train split initiative
+[2025-06-12 13:52:46,904] 32 root - INFO - ingestion of the data is completed
