@@ -1,0 +1,13 @@
+[2025-06-13 14:00:57,746] 24 root - INFO - data ingestion method or compoenent
+[2025-06-13 14:00:57,753] 27 root - INFO - Looking for file at: G:\datascience\end_to_end_machine_learning project\Notebook\Data\stud.csv
+[2025-06-13 14:00:57,754] 29 root - INFO - Creating folder: artifacts
+[2025-06-13 14:00:57,763] 31 root - INFO - train split initiative
+[2025-06-13 14:00:57,773] 35 root - INFO - ingestion of the data is completed
+[2025-06-13 14:00:57,839] 63 root - INFO - read train and test is complted
+[2025-06-13 14:00:57,839] 64 root - INFO - obtaing preprocessor object
+[2025-06-13 14:00:57,840] 45 root - INFO - numerical columns:['writing_score', 'reading_score']
+[2025-06-13 14:00:57,840] 46 root - INFO - categerical columns:['gender', 'race_ethnicity', 'parental_level_of_education', 'lunch', 'test_preparation_course']
+[2025-06-13 14:00:57,841] 74 root - INFO - applying preprocessing object on training and testing data
+[2025-06-13 14:00:57,842] 75 root - INFO - shape of training  data (800, 7),shape of the testing data (200, 7)
+[2025-06-13 14:00:57,859] 86 root - INFO - saving the preprocesser object
+[2025-06-13 14:00:57,862] 26 root - INFO - split training and test split data
