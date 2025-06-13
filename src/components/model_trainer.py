@@ -34,7 +34,34 @@ class ModelTrianer:
                 'Xgboost_Regressor':XGBRegressor(),
                 'AdaBoost_Regressor':AdaBoostRegressor()
             }
-            model_report:dict=Evalute_model(x_train=x_train,y_train=y_train,x_test=x_test,y_test=y_test,models=models)
+            # Hyper parameter Tuning
+            params={
+                    "Linear_Regression":{},
+                    "KNN":{},
+                    "Decision_Tree": {
+                    'criterion':['squared_error', 'friedman_mse', 'absolute_error', 'poisson'],
+                    # 'splitter':['best','random'],
+                    # 'max_features':['sqrt','log2'],
+                },
+                    "Random_Forest":{
+                    # 'criterion':['squared_error', 'friedman_mse', 'absolute_error', 'poisson'],
+                 
+                    # 'max_features':['sqrt','log2',None],
+                    'n_estimators': [8,16,32,64,128,256]
+                },              
+                "Xgboost_Regressor":{
+                    'learning_rate':[.1,.01,.05,.001],
+                    'n_estimators': [8,16,32,64,128,256]
+                },
+               
+                "AdaBoost_Regressor":{
+                    'learning_rate':[.1,.01,0.5,.001],
+                    # 'loss':['linear','square','exponential'],
+                    'n_estimators': [8,16,32,64,128,256]
+                }
+                }
+
+            model_report:dict=Evalute_model(x_train=x_train,y_train=y_train,x_test=x_test,y_test=y_test,models=models,params=params)
             # to get the best score from the dictionary
             best_model_score=max(sorted((model_report.values())))
             # to get the best model from the dictionary
